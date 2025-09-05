@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AegisAI — Autonomous AI Security Drones</title>
+  <meta name="description" content="AegisAI builds autonomous AI-powered security drones for 24/7 perimeter protection.">
+  <meta name="theme-color" content="#0c1220">
+  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Basic JSON-LD for Organization
+    const orgJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AegisAI",
+      "url": "https://guardpilot.github.io/AEGIS-AI/",
+      "logo": "assets/logo.svg",
+      "sameAs": [
+        "https://github.com/GuardPilot/aegisai"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "2025pilot.guard@gmail.com"
+      }]
+    };
+    window.addEventListener('DOMContentLoaded', () => {
+      const s = document.createElement('script');
+      s.type = 'application/ld+json';
+      s.textContent = JSON.stringify(orgJsonLd);
+      document.head.appendChild(s);
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="AegisAI logo" width="140" height="40">
+      </a>
+      <nav class="top-actions">
+        <button id="lang-toggle" class="ghost"><span>EN</span>/<span>RU</span></button>
+        <a href="#contact" class="btn small" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container grid2">
+        <div class="hero-copy">
+          <h1 data-i18n="hero_title">Autonomous AI Security Drones for 24/7 Protection</h1>
+          <p class="lead" data-i18n="hero_sub">
+            AegisAI combines advanced computer vision with enterprise drones to prevent intrusions before they escalate.
+          </p>
+          <div class="cta-row">
+            <button class="btn" id="open-pitch" data-i18n="btn_pitch">Download Pitch Deck (PDF)</button>
+            <a class="btn ghost" href="#technology" data-i18n="btn_learn">Learn more</a>
+          </div>
+          <ul class="hero-badges">
+            <li class="badge info" data-i18n="badge_inprogress">In Progress</li>
+            <li class="badge warn" data-i18n="badge_cto">Open Roles: CTO</li>
+          </ul>
+        </div>
+          <div class="hero-media">
+    <div class="media-card no-bg">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/key-technologies.png">
+        <source src="assets/hero.mp4" type="video/mp4">
+        <img src="assets/drone-docking.gif" alt="AegisAI drone docking demo">
+      </video>
+    </div>
+  </div>
+</section>
+
+    <!-- PROBLEM & SOLUTION -->
+    <section id="problem" class="section">
+      <div class="container grid2">
+        <div>
+          <h2 data-i18n="problem_title">Problem</h2>
+          <p data-i18n="problem_text">
+            Traditional security lacks continuous coverage, rapid response, and real-time analytics. Human fatigue and blind spots lead to missed incidents and rising costs.
+          </p>
+        </div>
+        <div>
+          <h2 data-i18n="solution_title">Solution</h2>
+          <p data-i18n="solution_text">
+            AegisAI deploys autonomous patrol drones with AI detection to identify risks early, deter intruders, and stream alerts to operators—reducing response time and total cost of ownership.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY NOW -->
+    <section id="whynow" class="section alt">
+      <div class="container">
+        <h2 data-i18n="whynow_title">Why Now</h2><img class="icon" src="assets/why-now.png" alt="Why Now">
+        <ul class="cards three">
+          <li class="card">
+            <img class="icon" src="assets/weather.png" alt="Mature enterprise drones">
+            <h3 data-i18n="whynow_item1_t">Mature enterprise drones</h3>
+            <p data-i18n="whynow_item1_d">DJI Enterprise Matrice 30T-class hardware enables reliable all-weather patrols.</p>
+          </li>
+          <li class="card">
+            <img class="icon" src="assets/computer-vision.png" alt="On-device AI">
+            <h3 data-i18n="whynow_item2_t">On-device AI</h3>
+            <p data-i18n="whynow_item2_d">Efficient computer vision models now run at the edge for faster, safer decisions.</p>
+          </li>
+          <li class="card">
+            <img class="icon" src="assets/incident-response.png" alt="Operational pressure">
+            <h3 data-i18n="whynow_item3_t">Operational pressure</h3>
+            <p data-i18n="whynow_item3_d">Security teams face labor shortages and rising costs—automation multiplies coverage.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section id="technology" class="section">
+      <div class="container">
+        <h2 data-i18n="tech_title">Technology</h2><img class="hero-illustration" src="assets/key-technologies.png" alt="Tech overview">
+        <div class="tech-grid">
+          <div class="tech-col">
+            <h3 data-i18n="tech_stack_t">Stack</h3>
+            <ul class="list">
+              <li data-i18n="tech_item1"><img class="icon sml" src="assets/dock.png" alt=""> DJI Enterprise Matrice 30T platform</li>
+              <li data-i18n="tech_item2"><img class="icon sml" src="assets/integration.png" alt=""> Autonomous navigation + remote wireless charging</li>
+              <li data-i18n="tech_item3"><img class="icon sml" src="assets/computer-vision.png" alt=""> Edge AI (vision) for detection & tracking</li>
+              <li data-i18n="tech_item4">Secure app for alerts, review, and escalation</li>
+              <li data-i18n="tech_item5">Non‑lethal deterrent payload (pepper‑spray canister)</li>
+            </ul>
+          </div>
+          <div class="tech-col">
+            <h3 data-i18n="tech_safety_t"><img class="icon sml" src="assets/protection.png" alt=""> Safety & Compliance</h3>
+            <ul class="list">
+              <li data-i18n="tech_s1">Fail-safes: return‑to‑home, geo‑fencing, manual override</li>
+              <li data-i18n="tech_s2">Audit logs, role-based access, encryption in transit</li>
+              <li data-i18n="tech_s3">Local laws and site policies respected during operation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARKET & METRICS -->
+    <section id="market" class="section alt">
+      <div class="container">
+        <h2 data-i18n="market_title">Market & Metrics</h2>
+        <div class="cards three">
+          <div class="card">
+            <div class="card-head">
+              <img class="icon" src="assets/research.png" alt="Research">
+              <h3 data-i18n="market_card1_h">TAM / SAM / SOM</h3>
+              <span class="badge ghost" data-i18n="badge_research">Research</span>
+            </div>
+            <p data-i18n="market_card1_p">Methodology in progress. No speculative figures. Results to be published post‑validation.</p>
+            <ul class="mini">
+              <li data-i18n="market_card1_m1">Methodology: bottom‑up (site count × patrol hours × ASP)</li>
+              <li data-i18n="market_card1_m2">Sources: buyer interviews, public procurement data</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <img class="icon" src="assets/target.png" alt="Pipeline">
+              <h3 data-i18n="market_card2_h">Pilot Pipeline</h3>
+              <span class="badge info" data-i18n="badge_inprogress">In Progress</span>
+            </div>
+            <p data-i18n="market_card2_p">Prospect discovery and requirements mapping underway with early adopters.</p>
+            <ul class="mini">
+              <li data-i18n="market_card2_m1">Methodology: structured intake + site audit</li>
+              <li data-i18n="market_card2_m2">Artifacts: MoSCoW backlog, success metrics</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <img class="icon" src="assets/reduce-cost.png" alt="Unit economics">
+              <h3 data-i18n="market_card3_h">Unit Economics</h3>
+              <span class="badge ghost" data-i18n="badge_method">Methodology</span>
+            </div>
+            <p data-i18n="market_card3_p">Cost model = hardware (BOM) + charging + software + ops. Publish after pilot.</p>
+            <ul class="mini">
+              <li data-i18n="market_card3_m1">Approach: cohort LTV/CAC, payback target</li>
+              <li data-i18n="market_card3_m2">Evidence: field logs, downtime analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="section">
+      <div class="container">
+        <h2 data-i18n="roadmap_title">Roadmap</h2>
+        <ol class="timeline">
+          <li>
+            <div class="time">Q3–Q4 2025</div>
+            <div class="node">
+              <strong data-i18n="rd1_t">MVP assembly & bench tests</strong>
+              <span class="badge info" data-i18n="badge_inprogress">In Progress</span>
+              <p data-i18n="rd1_d">Integrate platform, edge vision, remote charging. Validate core flows.</p>
+            </div>
+          </li>
+          <li>
+            <div class="time">Q1 2026</div>
+            <div class="node">
+              <strong data-i18n="rd2_t">Field pilots</strong>
+              <p data-i18n="rd2_d">Deploy supervised pilots on private sites with explicit policies and KPIs.</p>
+            </div>
+          </li>
+          <li>
+            <div class="time">Q2 2026</div>
+            <div class="node">
+              <strong data-i18n="rd3_t">v1 Launch</strong>
+              <p data-i18n="rd3_d">Subscription model, support SLAs, and onboarding playbooks.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TEAM / FOUNDER -->
+<section id="team" class="section alt founder-bg">
+  <div class="container grid2">
+    <div>
+      <h2 data-i18n="team_title">Team & Founder</h2>
+      <p data-i18n="team_text">
+        Founder & CEO: Roman Chaikin — product & operations. Building AegisAI with a focus on safety, reliability, and clear economics.
+      </p>
+      <ul class="chips">
+        <li class="chip" data-i18n="badge_openroles">Open Roles</li>
+        <li class="chip"><img class="chip-ico" src="assets/cto.png" alt="CTO"> <span data-i18n="badge_cto">CTO</span></li>
+      </ul>
+    </div>
+    <div class="founder-panel">
+      <img src="assets/founder.png" alt="Founder" class="founder-img">
+      <div class="cta-row">
+        <a class="btn small" href="https://t.me/AegisAI_Support" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn small ghost" href="mailto:2025pilot.guard@gmail.com">Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENT STATUS -->
+
+    <section id="status" class="section">
+      <div class="container">
+        <h2 data-i18n="status_title">Current Status</h2>
+        <ul class="status-list">
+          <li><span class="dot"></span><span data-i18n="st1">Brand & landing established</span></li>
+          <li><span class="dot"></span><span data-i18n="st2">MVP parts sourcing & prototyping</span></li>
+          <li><span class="dot"></span><span data-i18n="st3">Pilot criteria & safety checklist</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- INVESTMENT ASK -->
+    <section id="ask" class="section alt">
+      <div class="container grid2">
+        <div>
+          <h2 data-i18n="ask_title">Investment Ask</h2>
+          <p data-i18n="ask_text">Raising to complete MVP, run pilots, and reach v1 readiness.</p>
+          <ul class="mini">
+            <li data-i18n="ask_use1">Use of funds: hardware, engineering, pilots</li>
+            <li data-i18n="ask_use2">Runway targets aligned with milestones</li>
+          </ul>
+        </div>
+        <div>
+          <div class="card muted">
+            <p class="small" data-i18n="ask_note">
+              No inflated claims or fabricated metrics. We publish results after methodical validation.
+            </p>
+            <button class="btn" id="open-pitch-2" data-i18n="btn_pitch">Download Pitch Deck (PDF)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container grid2">
+        <div>
+          <h2 data-i18n="contact_title"><img class="icon sml" src="assets/phone.png" alt=""></h2>
+          <p><strong>Telegram:</strong> <a href="https://t.me/AegisAI_Support" target="_blank" rel="noopener">@AegisAI_Support</a></p>
+          <p><strong>Email:</strong> <a href="mailto:2025pilot.guard@gmail.com">2025pilot.guard@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/GuardPilot/aegisai" target="_blank" rel="noopener">GuardPilot/aegisai</a></p>
+        </div>
+        <form id="pitch-form" class="form">
+          <h3 data-i18n="form_title">Get the Pitch Deck</h3>
+          <label>
+            <span data-i18n="form_name">Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span data-i18n="form_company">Company</span>
+            <input type="text" name="company" required>
+          </label>
+          <label>
+            <span data-i18n="form_email">Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <button type="submit" class="btn" data-i18n="form_submit">Request deck</button>
+          <p id="form-result" class="small" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="small">
+        <span data-i18n="disc_general">Disclaimer: Flight operations comply with local laws, site policies, and safety constraints. Deterrent payloads used only where permitted.</span>
+      </p>
+      <details>
+        <summary data-i18n="privacy_title">Privacy Policy</summary>
+        <p class="small" data-i18n="privacy_text">
+          We collect contact details you submit to share the pitch deck and updates. Data is stored securely and never sold. To remove your data, email us.
+        </p>
+      </details>
+      <p class="small">© <span id="year"></span> AegisAI</p>
+    </div>
+  </footer>
+
+  <div id="pitch-modal" class="modal" hidden>
+    <div class="modal-content">
+      <button class="close" aria-label="Close">×</button>
+      <h3 data-i18n="form_title">Get the Pitch Deck</h3>
+      <form id="pitch-form-modal" class="form">
+        <label>
+          <span data-i18n="form_name">Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span data-i18n="form_company">Company</span>
+          <input type="text" name="company" required>
+        </label>
+        <label>
+          <span data-i18n="form_email">Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <button type="submit" class="btn" data-i18n="form_submit">Request deck</button>
+        <p id="form-result-modal" class="small" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
