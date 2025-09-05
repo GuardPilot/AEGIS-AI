@@ -163,3 +163,37 @@ input:focus-visible, textarea:focus-visible{outline:none;box-shadow:0 0 0 3px rg
 .badge--research::before{background-image:url("assets/icons/research_24.webp")}
 .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
 .reveal.is-visible{opacity:1;transform:none}
++/* ==== Founder background (art as backdrop) ==== */
++.founder--bg{ position:relative; isolation:isolate; overflow:hidden; }
++.founder--bg::before{
++  content:"";
++  position:absolute; inset:0; z-index:-1; pointer-events:none;
++  /* Фолбэк: PNG */
++  background-image:
++    radial-gradient(900px 600px at 85% 40%, rgba(255,140,0,.20), transparent 40%),
++    linear-gradient(to bottom, rgba(8,12,16,.85), rgba(8,12,16,.92)),
++    url("assets/img/founder_bg.png");
++  background-size:cover; background-position:center;
++  filter:saturate(110%) contrast(105%);
++  opacity:.65;
++}
++/* Если позже добавим webp/jpg — подменим последним слоем через image-set */
++@supports (background-image: image-set(url("x.webp") type("image/webp") 1x)){
++  .founder--bg::before{
++    background-image:
++      radial-gradient(900px 600px at 85% 40%, rgba(255,140,0,.20), transparent 40%),
++      linear-gradient(to bottom, rgba(8,12,16,.85), rgba(8,12,16,.92)),
++      image-set(
++        url("assets/img/founder_bg_1600.webp") type("image/webp") 1x,
++        url("assets/img/founder_bg_3200.webp") type("image/webp") 2x,
++        url("assets/img/founder_bg_1600.jpg") type("image/jpeg") 1x,
++        url("assets/img/founder_bg_3200.jpg") type("image/jpeg") 2x
++      );
++  }
++}
++/* Читаемость карточки на фоне */
++.founder--bg .founder__inner{
++  background: rgba(9,14,18,.56);
++  border-color: rgba(255,255,255,.08);
++  backdrop-filter: blur(4px);
++}
