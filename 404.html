@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AegisAI — Autonomous Perimeter Patrol</title>
+  <meta name="description" content="Dock-charged autonomous drones for 24/7 perimeter patrol with proactive deterrence and VMS/alarm integrations.">
+  <link rel="preload" as="style" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/favicon/favicon.svg">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="dot"></span> <span>AegisAI</span></div>
+      <nav>
+        <a href="#technology" data-i18n="nav_tech">Technology</a>
+        <a href="#kpi" data-i18n="nav_kpi">KPIs</a>
+        <a href="#industries" data-i18n="nav_industries">Industries</a>
+        <a href="#market" data-i18n="nav_market">Market</a>
+        <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <button id="lang-switch" aria-label="Switch language">EN</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-h1">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/img/og.jpg">
+        <source src="assets/other/hero.mp4" type="video/mp4">
+      </video>
+      <div class="content container">
+        <h1 id="hero-h1" data-i18n="hero_h1">AegisAI — autonomous perimeter patrol, 24/7</h1>
+        <p class="lead" data-i18n="hero_lead">Dock-charged drones that detect, track and deter before a breach.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact" data-i18n="cta_primary">Request Deck & Pilot Call</a>
+          <a class="btn btn-secondary" href="#technology" data-i18n="cta_secondary">Explore Technology</a>
+        </div>
+        <p style="opacity:.8;margin-top:12px" data-i18n="hero_note">Built on DJI Matrice 30T. Integrates with VMS/alarms. Non-lethal deterrent (subject to local law).</p>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2 data-i18n="ps_h2">Problem & Solution</h2>
+          <p data-i18n="p_problem">Guards are expensive and can’t be everywhere. Cameras record but don’t prevent. Night response is slow.</p>
+          <p data-i18n="p_solution">Always-on docked drones with proactive defense: detect → track → voice/siren/pepper. Alert to VMS in ≤ N s.</p>
+        </div>
+        <div class="card">
+          <h2 data-i18n="tech_h2">Key Technologies</h2>
+          <ul>
+            <li data-i18n="tech_list_1">Computer vision for person/vehicle detection and tracking</li>
+            <li data-i18n="tech_list_2">Autonomous navigation with geofences and routes</li>
+            <li data-i18n="tech_list_3">Wireless docking and smart charge scheduling</li>
+            <li data-i18n="tech_list_4">Telemetry cloud, VMS/alarm integrations</li>
+            <li data-i18n="tech_list_5">Non-lethal deterrent options</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kpi">
+      <div class="container">
+        <h2 data-i18n="kpi_h2">Targets & current KPIs</h2>
+        <div class="kpi">
+          <div class="card"><div class="badge" data-i18n="kpi_1">Dock uptime</div><div class="value">x% <small>current</small></div><div>≥ W% target</div></div>
+          <div class="card"><div class="badge" data-i18n="kpi_2">Detection latency</div><div class="value">y s <small>avg</small></div><div>≤ Z s target</div></div>
+          <div class="card"><div class="badge" data-i18n="kpi_3">Autonomous missions</div><div class="value">p%</div><div>≥ Q% target</div></div>
+          <div class="card"><div class="badge" data-i18n="kpi_4">Cost per site</div><div class="value">~$200–$K/mo</div><div>model by site size</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="status">
+      <div class="container">
+        <h2 data-i18n="status_h2">Current Status</h2>
+        <ul class="card">
+          <li data-i18n="status_list_1">Stage: Pre-seed R&D</li>
+          <li data-i18n="status_list_2">Hardware: prototype dock; Matrice 30T integration</li>
+          <li data-i18n="status_list_3">Software: detection/tracking v0.x; route planner; telemetry alpha</li>
+          <li data-i18n="status_list_4">Tests: N night tests; M dock hours; latency avg y s</li>
+          <li data-i18n="status_list_5">Looking for 2–3 pilot sites</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2 data-i18n="why_h2">Why Now?</h2>
+          <ul>
+            <li data-i18n="why_1">Edge AI is cheap enough for reliable on-site inference</li>
+            <li data-i18n="why_2">Commodity airframes cut hardware barriers</li>
+            <li data-i18n="why_3">Visible active drones reduce attempts vs passive CCTV</li>
+            <li data-i18n="why_4">Regulations are opening controlled private-site ops</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 data-i18n="cto_h2">We're hiring a CTO (Co‑founder)</h2>
+          <p data-i18n="cto_p">Computer vision (detection/tracking), RL, robotics & autonomy on edge. Hands‑on builder with product mindset.</p>
+          <a class="btn btn-primary" href="#contact" data-i18n="cto_apply">Apply / Book a call</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="industries">
+      <div class="container">
+        <h2 data-i18n="industries_h2">Industries</h2>
+        <div class="card" data-i18n="industries_list">Industrial areas • Warehouses • Logistics hubs • Business parks • Retail sites • Gated communities • Data centers</div>
+      </div>
+    </section>
+
+    <section class="section" id="market">
+      <div class="container">
+        <h2 data-i18n="market_h2">Market & Metrics</h2>
+        <details class="accordion">
+          <summary data-i18n="market_head">TAM: perimeter security $73.6–81.4B (2024). DIAB adjacency used for SAM assumptions.</summary>
+          <div class="card" style="margin-top:10px">
+            <p>Methodology & sources: Fortune BI, MarketsandMarkets, DIAB datasets. Separate assumptions vs validated figures.</p>
+          </div>
+        </details>
+
+        <h2 style="margin-top:18px" data-i18n="bm_h2">Business model</h2>
+        <details class="accordion">
+          <summary data-i18n="bm_head">HaaS subscription for perimeter patrol + setup fee/NRE + paid POCs (1–3 months). Below 24/7 guarding for equivalent coverage.</summary>
+          <div class="card" style="margin-top:10px">
+            <p data-i18n="metrics_head">Commercial (pilots, LOIs, ACV), Product/quality (FAR, Precision/Recall, mission success, MTBF/MTTR, dock uptime), Ops/regulatory (BVLOS/night, integrations).</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section founder-section" id="founder" aria-labelledby="founder-title">
+      <div class="content">
+        <h2 id="founder-title" data-i18n="founder_h2">Founder: Roman Chaikin</h2>
+        <span class="badge" data-i18n="founder_badge">Founder</span>
+        <p class="founder-text" data-i18n="founder_p1">This is more than a startup. It’s a way to make proactive security affordable.</p>
+        <p class="founder-text" data-i18n="founder_p2">8+ years hands‑on: installs, controllers, UAV comms/navigation, robotics integration.</p>
+        <p class="founder-text" data-i18n="founder_p3">I soldered boards, wrote controller code and integrated VMS/CCTV/ACS.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-band">
+        <h3 data-i18n="cta_band_h2">Ready to secure your perimeter?</h3>
+        <a class="btn btn-primary" href="#contact" data-i18n="cta_band_btn">Request Deck & Pilot Call</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 data-i18n="contact_h2">Contact us</h2>
+        <p data-i18n="contact_note">We respond within 1 business day.</p>
+        <form class="card" aria-label="Contact form">
+          <label><span data-i18n="form_email">Email *</span><br><input required type="email" name="email" placeholder="you@example.com" style="width:100%;padding:10px;border-radius:10px;border:1px solid #2a344a;background:#0f1524;color:#fff"></label><br><br>
+          <label><span data-i18n="form_name">Name (optional)</span><br><input type="text" name="name" placeholder="How should we address you?" style="width:100%;padding:10px;border-radius:10px;border:1px solid #2a344a;background:#0f1524;color:#fff"></label><br><br>
+          <label><span data-i18n="form_message">Message *</span><br><textarea required name="message" rows="5" placeholder="Tell us briefly about your site..." style="width:100%;padding:10px;border-radius:10px;border:1px solid #2a344a;background:#0f1524;color:#fff"></textarea></label><br><br>
+          <label><input type="checkbox" required> <span data-i18n="form_policy">I agree with the privacy policy</span></label><br><br>
+          <button class="btn btn-secondary" type="submit" data-i18n="form_send">Send</button>
+          <div style="display:inline-flex;gap:8px;margin-left:10px">
+            <a class="btn" href="https://t.me/AegisAI_Support" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn" href="mailto:2025pilot.guard@gmail.com">Email</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>&copy; 2025 AegisAI</div>
+      <div style="opacity:.8" data-i18n="footer_note">AegisAI is not affiliated with DJI. Features subject to local regulations.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
